@@ -1,0 +1,2 @@
+working_dir = "./"
+API_KEY = "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"

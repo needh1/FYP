@@ -1,0 +1,34 @@
+﻿Name,Path,Contract Name,function,Description
+Hpay,Data/HPay.sol,MintableAutoCompundRelockBonus,setToken,Vulnerable function lacks roles
+Uerii,Data/Uerii.sol,Token,mint,Vulnerable function lacks roles
+Reaper_Farm,Data/Reaper_Farm.sol,ReaperVaultV2,withdraw,Vulnerable function lacks roles
+GYMNetwork,Data/GYMNetwork.sol,GymSinglePool,depositFromOtherContract,Vulnerable function lacks roles
+Templedao,Data/Templedao.sol,StaxLPStaking,migrateStake,Vulnerable function lacks roles
+Sandbox_LAND,Data/Sandbox_LAND.sol,ERC721BaseToken,_burn,Vulnerable function lacks roles
+Rikkei_Finance,Data/Rikkei_Finance.sol,SimplePriceOracle,setOracleData,Vulnerable function lacks roles
+Bancor_Protocol,Data/Bancor_Protocol.sol,TokenHandler,safeTransferFrom,Vulnerable function lacks roles
+88mph,Data/88mph.sol,NFT,init,Vulnerable function lacks roles
+SpaceGodzilla,Data/SpaceGodzilla.sol,SpaceGodzilla,swapAndLiquifyStepv1,Vulnerable function lacks roles
+88mph_nv1,Data/88mph.sol,NFT,setBaseURI,Vulnerable function lacks roles
+88mph_nv2,Data/88mph.sol,NFT,mint,Vulnerable function lacks roles
+Bancor_Protocol_nv1,Data/Bancor_Protocol.sol,Owned,acceptOwnership,"""regex_based:newOwner, name_based:owner"""
+Bancor_Protocol_nv2,Data/Bancor_Protocol.sol,Owned,transferOwnership,Vulnerable function lacks roles
+GYMNetwork_nv1,Data/GYMNetwork.sol,GymSinglePool,setPoolInfo,Vulnerable function lacks roles
+GYMNetwork_nv2,Data/GYMNetwork.sol,GymSinglePool,setTreasuryAddress,Vulnerable function lacks roles
+Hpay_nv1,Data/HPay.sol,MintableAutoCompundRelockBonus,setStartTime,Vulnerable function lacks roles
+Hpay_nv2,Data/HPay.sol,MintableAutoCompundRelockBonus,setRewardRate,Vulnerable function lacks roles
+Reaper_Farm_nv1,Data/Reaper_Farm.sol,ReaperVaultV2,setEmergencyShutdown,Vulnerable function lacks roles
+Reaper_Farm_nv2,Data/Reaper_Farm.sol,ReaperVaultV2,inCaseTokensGetStuck,Vulnerable function lacks roles
+Sandbox_LAND_nv1,Data/Sandbox_LAND.sol,ERC721BaseToken,approve,"""
+            owner == msg.sender ||
+            _superOperators[msg.sender] ||
+            _operatorsForAll[owner][msg.sender],
+            """"not authorized to approve""""
+        """
+Sandbox_LAND_nv2,Data/Sandbox_LAND.sol,ERC721BaseToken,transferFrom,Vulnerable function lacks roles
+SpaceGodzilla_nv1,Data/SpaceGodzilla.sol,Ownable,transferOwnership,Vulnerable function lacks roles
+SpaceGodzilla_nv2,Data/SpaceGodzilla.sol,SpaceGodzilla,rescueToken,Vulnerable function lacks roles
+Templedao_nv1,Data/Templedao.sol,StaxLPStaking,setRewardDistributor,Vulnerable function lacks roles
+Templedao_nv2,Data/Templedao.sol,StaxLPStaking,migrateWithdraw,Vulnerable function lacks roles
+Uerii_nv1,Data/Uerii.sol,ERC20,approve,Vulnerable function lacks roles
+Uerii_nv2,Data/Uerii.sol,ERC20,transfer,Vulnerable function lacks roles
